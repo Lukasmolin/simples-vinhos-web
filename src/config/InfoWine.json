@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Charbonay Cpt. Holt",
+        "type": "Tinto",
+        "description": "um vinho muito bom pra tomar pelo sabor de vinho e notas de vinho",
+        "imgUrl": "http://estaaimg.com/vinho.jpeg",
+        "price": 9.99
+    },
+    {
+        "name": "Keep Cooler Uva",
+        "type": "Keep Cooler",
+        "description": "Suquinho de uva gostoso",
+        "imgUrl": "http://estaaimg.com/suquim.jpeg",
+        "price": 16.99
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "name": "Sérgio Carvalho",
+    "imgUrl": "http://cerjo.com.br/img.jpg",
+    "about": "Um cara bem legal que curte vinhos musica e tocar baixo.",
+    "contact": {
+        "whatsapp": "+55 21 99999-9999",
+        "instagram": "@simplesvinhos",
+        "facebook": "/simplesvinhos"
+    }
+}
