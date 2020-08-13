@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.488d6120.chunk.css",
-    "main.js": "/static/js/main.3283b1fb.chunk.js",
-    "main.js.map": "/static/js/main.3283b1fb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c8b7f8e7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c8b7f8e7.js.map",
-    "static/js/2.234a36f9.chunk.js": "/static/js/2.234a36f9.chunk.js",
-    "static/js/2.234a36f9.chunk.js.map": "/static/js/2.234a36f9.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f96cca8fb21cdd37e99bb0424873e0df.js": "/precache-manifest.f96cca8fb21cdd37e99bb0424873e0df.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.488d6120.chunk.css.map": "/static/css/main.488d6120.chunk.css.map",
-    "static/js/2.234a36f9.chunk.js.LICENSE.txt": "/static/js/2.234a36f9.chunk.js.LICENSE.txt",
-    "static/media/SimplesLogo.png": "/static/media/SimplesLogo.b26d6fcd.png"
+    "main.css": "/simples-vinhos-web/static/css/main.488d6120.chunk.css",
+    "main.js": "/simples-vinhos-web/static/js/main.3d8a40fd.chunk.js",
+    "main.js.map": "/simples-vinhos-web/static/js/main.3d8a40fd.chunk.js.map",
+    "runtime-main.js": "/simples-vinhos-web/static/js/runtime-main.b5c0c8ce.js",
+    "runtime-main.js.map": "/simples-vinhos-web/static/js/runtime-main.b5c0c8ce.js.map",
+    "static/js/2.234a36f9.chunk.js": "/simples-vinhos-web/static/js/2.234a36f9.chunk.js",
+    "static/js/2.234a36f9.chunk.js.map": "/simples-vinhos-web/static/js/2.234a36f9.chunk.js.map",
+    "index.html": "/simples-vinhos-web/index.html",
+    "precache-manifest.4515f9e1c51941db2014a41110951635.js": "/simples-vinhos-web/precache-manifest.4515f9e1c51941db2014a41110951635.js",
+    "service-worker.js": "/simples-vinhos-web/service-worker.js",
+    "static/css/main.488d6120.chunk.css.map": "/simples-vinhos-web/static/css/main.488d6120.chunk.css.map",
+    "static/js/2.234a36f9.chunk.js.LICENSE.txt": "/simples-vinhos-web/static/js/2.234a36f9.chunk.js.LICENSE.txt",
+    "static/media/SimplesLogo.png": "/simples-vinhos-web/static/media/SimplesLogo.b26d6fcd.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c8b7f8e7.js",
+    "static/js/runtime-main.b5c0c8ce.js",
     "static/js/2.234a36f9.chunk.js",
     "static/css/main.488d6120.chunk.css",
-    "static/js/main.3283b1fb.chunk.js"
+    "static/js/main.3d8a40fd.chunk.js"
   ]
 }
