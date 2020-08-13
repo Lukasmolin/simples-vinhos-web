@@ -1,0 +1,33 @@
+.header-comp {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    padding: 0px;
+}
+
+.header-comp > * {
+    display: flex;
+}
+
+.header-comp .logoImg {    
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.header-comp nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-comp nav a {
+    font: 300;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    height: fit-content;
+    padding: 4px;
+    margin: 0px 4px 4px 0px;
+    border:  2px solid white;
+    transition: 0.25s;
+}
