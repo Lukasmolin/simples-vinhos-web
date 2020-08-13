@@ -6,29 +6,20 @@ export interface HeaderProps {
        label: string
        to: string 
     }[]
-    logo: {
-        img: string
-    }
-    text: {
-        content: string
-        font: {
-            type: string
-        }
-    }
+    logoImg: string
+    textContent: string
 }
 
-export const Header : React.FC<HeaderProps> = (props: HeaderProps) => {
+export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
     const menu = props.menu.map(val => {
         return <Link to={val.to}>{val.label}</Link>;
     });
 
-    return (
-        <header>
-            <nav>
-                {menu}
-            </nav>
-        </header>
-    )
+    return <header>
+        <nav>
+            {menu}
+        </nav>
+    </header>;
 };
 
 export default Header;
