@@ -1,3 +1,4 @@
+/* Component */
 .header-comp {
     display: flex;
     justify-content: space-between;
@@ -10,24 +11,36 @@
     display: flex;
 }
 
+/* Logo */
 .header-comp .logoImg {    
     max-height: 100px;
     max-width: 100px;
 }
 
-.header-comp nav {
-    display: flex;
+/* Navegation */
+.header-comp .navWrapper {
+    height: inherit;
     align-items: flex-end;
+    padding: 4px;
 }
 
-.header-comp nav a {
+
+.header-comp .navWrapper nav {
+    display: flex;
+    height: fit-content;
+}
+
+.header-comp .navWrapper nav a {
     font: 300;
     color: white;
     text-decoration: none;
     white-space: nowrap;
     height: fit-content;
     padding: 4px;
-    margin: 0px 4px 4px 0px;
     border:  2px solid white;
     transition: 0.25s;
+}
+
+.header-comp .navWrapper nav a + a {
+    margin-left: 4px;
 }

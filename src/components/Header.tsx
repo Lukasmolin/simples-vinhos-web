@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../resources/imgs/SimplesLogo.png';
 import './Header.css';
 
 export interface HeaderProps {
@@ -22,6 +21,7 @@ export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
     });
 
     return <header className="header-comp">
+        
         <div className="logoWrapper">
             <img 
                 className="logoImg"
@@ -29,9 +29,12 @@ export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
                 alt="Simples Logo">
             </img>
         </div>
-        <nav>
-            {menu}
-        </nav>
+        <div className="navWrapper">
+            <nav>
+                {menu}
+            </nav>
+        </div>
+              
     </header>;
 };
 
