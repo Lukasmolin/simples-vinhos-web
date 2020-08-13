@@ -1,0 +1,31 @@
+.header-comp {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    padding: 0px;
+}
+
+.header-comp > * {
+    display: flex;
+}
+
+.header-comp .logoImg {    
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.header-comp nav {
+    align-items: flex-end;
+}
+
+.header-comp nav a {
+    white-space: nowrap;
+    height: fit-content;
+    padding: 4px;
+    transition: 0.25s;
+}
+
+.header-comp nav a:hover {
+    background: cross-fade(black);
+}
