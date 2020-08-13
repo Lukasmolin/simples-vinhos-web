@@ -1,14 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
+import Header, { HeaderProps } from '../components/Header';
 import Service from '../service/Service';
 
 export default class HomePage extends React.Component {
 
-    private header: JSX.Element;
-
-    constructor(header: Header, private service: Service) {
+    constructor(private header: HeaderProps, private service: Service) {
         super({});
-        this.header = header.render();
         this.render = this.render.bind(this);
     }
 
@@ -16,7 +13,7 @@ export default class HomePage extends React.Component {
         const info = this.service.author;
         return (
             <div>
-                {this.header}
+                {Header(this.header)}
                 <main>
                     {JSON.stringify(info)}
                 </main>

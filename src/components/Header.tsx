@@ -17,29 +17,18 @@ export interface HeaderProps {
     }
 }
 
-export default class Header extends React.Component {
+export const Header : React.FC<HeaderProps> = (props: HeaderProps) => {
+    const menu = props.menu.map(val => {
+        return <Link to={val.to}>{val.label}</Link>;
+    });
 
-    private rendered: JSX.Element;
-
-    constructor(props: HeaderProps) {
-        super(props);
-        this.render = this.render.bind(this);
-        this.rendered = this.generateRendered(props);
-    }
-
-    private generateRendered(props: HeaderProps) {
-        const menu = props.menu.map(val => {
-            return <Link to={val.to}>{val.label}</Link>;
-        });
-        return (<header>
+    return (
+        <header>
             <nav>
                 {menu}
             </nav>
-        </header>);
-    }
+        </header>
+    )
+};
 
-    render() {
-        return this.rendered;
-    }
-
-}
+export default Header;
