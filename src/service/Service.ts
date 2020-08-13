@@ -1,5 +1,6 @@
 import infoAuthor from '../config/InfoAuthor.json';
 import infoWine from '../config/InfoWine.json';
+import menuInfo from '../config/Menu.json';
 
 export interface Wine {
     name: string
@@ -20,6 +21,11 @@ export interface Author {
     }
 }
 
+export interface MenuItem {
+    label: string
+    to: string
+}
+
 export default class Service {
 
     public get wines() : Wine[] {
@@ -28,6 +34,10 @@ export default class Service {
 
     public get author() : Author {
         return infoAuthor;
+    }
+
+    public get menu() : MenuItem[] {
+        return menuInfo.items;
     }
 
 }

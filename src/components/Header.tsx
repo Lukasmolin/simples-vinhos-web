@@ -6,40 +6,20 @@ export interface HeaderProps {
        label: string
        to: string 
     }[]
-    logo: {
-        img: string
-    }
-    text: {
-        content: string
-        font: {
-            type: string
-        }
-    }
+    logoImg: string
+    textContent: string
 }
 
-export default class Header extends React.Component {
+export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
+    const menu = props.menu.map(val => {
+        return <Link to={val.to}>{val.label}</Link>;
+    });
 
-    private rendered: JSX.Element;
+    return <header>
+        <nav>
+            {menu}
+        </nav>
+    </header>;
+};
 
-    constructor(props: HeaderProps) {
-        super(props);
-        this.render = this.render.bind(this);
-        this.rendered = this.generateRendered(props);
-    }
-
-    private generateRendered(props: HeaderProps) {
-        const menu = props.menu.map(val => {
-            return <Link to={val.to}>{val.label}</Link>;
-        });
-        return (<header>
-            <nav>
-                {menu}
-            </nav>
-        </header>);
-    }
-
-    render() {
-        return this.rendered;
-    }
-
-}
+export default Header;

@@ -1,0 +1,10 @@
+{
+    "items": [
+        { "to": "page1", "label": "página 1" },
+        { "to": "page2", "label": "página 2" },
+        { "to": "page3", "label": "página 3" },
+        { "to": "page4", "label": "página 4" }
+    ],
+    "logoImg": "",
+    "title": "Simples Vinhos"
+}
