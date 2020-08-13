@@ -13,8 +13,10 @@
 
 /* Logo */
 .header-comp .logoImg {    
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 75px;
+    max-width: 75px;
+    min-width: 25px;
+    min-height: 25px;
 }
 
 /* Navegation */
@@ -31,7 +33,7 @@
 }
 
 .header-comp .navWrapper nav a {
-    font: 300;
+    font-weight: 400;
     color: white;
     text-decoration: none;
     white-space: nowrap;
@@ -39,6 +41,16 @@
     padding: 4px;
     border:  2px solid white;
     transition: 0.25s;
+}
+
+.header-comp .navWrapper nav a:hover {
+    background-color: #383838;
+    transition: 0s;
+}
+
+.header-comp .navWrapper nav a:active { 
+    background-color: white;
+    color: #383838;
 }
 
 .header-comp .navWrapper nav a + a {

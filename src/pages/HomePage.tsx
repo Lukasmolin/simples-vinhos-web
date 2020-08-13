@@ -1,5 +1,5 @@
 import React from 'react';
-import Header, { HeaderProps } from '../components/Header';
+import Header from '../components/Header';
 import Service from '../service/Service';
 import HomePageService from '../service/HomePageService';
 

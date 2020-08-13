@@ -4,6 +4,5 @@
         { "to": "carta", "label": "Carta" },
         { "to": "vinhos", "label": "Vinhos" },
         { "to": "sobre", "label": "Sobre" }
-    ],
-    "title": "Simples Vinhos"
+    ]
 }
