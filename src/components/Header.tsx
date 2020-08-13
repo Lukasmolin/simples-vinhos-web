@@ -25,7 +25,7 @@ export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
         <div className="logoWrapper">
             <img 
                 className="logoImg"
-                src={logo}
+                src={props.logoImg}
                 alt="Simples Logo">
             </img>
         </div>
