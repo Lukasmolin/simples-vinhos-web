@@ -58,6 +58,12 @@
     margin-left: 4px;
 }
 
+@media (max-width: 960px) {
+    .header-comp .navWrapper nav a {
+        font-size: 1.25em;
+    }
+}
+
 @media (max-width: 600px) {
     .header-comp {
         flex-direction: column;
@@ -65,5 +71,19 @@
 
     .header-comp > * {
         justify-content: center;
+    }
+
+    .header-comp .logoImg {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .header-comp .navWrapper nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .header-comp .navWrapper nav a {
+        font-size: 1.5em;
     }
 }
