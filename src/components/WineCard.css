@@ -28,7 +28,7 @@
 @media (max-width: 600px) {
     .wineCard-comp {
         flex-direction: column;
-        max-width: 40vw;
+        max-width: 100%;
     }
 
     .wineCard-comp .imgHolder > *{

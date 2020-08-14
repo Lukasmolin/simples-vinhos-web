@@ -11,7 +11,11 @@ const HomePage: React.FC = () => {
     return <>
         <Header menu={service.menu} logoImg={service.logoImg} />
         <main>
-            <WineCard imageSrc={service.logoImg}/>
+            <WineCard 
+                imageSrc={service.logoImg}
+                title="Vinho Santo Gole"
+                content="O vinho verdadeiramente santificado d'Ele"    
+            />
         </main>
     </>;
 }

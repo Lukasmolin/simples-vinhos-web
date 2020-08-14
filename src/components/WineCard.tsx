@@ -3,6 +3,8 @@ import './WineCard.css';
 
 export interface WineCardProps {
     imageSrc: string
+    title: string
+    content: string
 }
 
 const WineCard: React.FC<WineCardProps> = (props: WineCardProps) => {   
@@ -16,8 +18,8 @@ const WineCard: React.FC<WineCardProps> = (props: WineCardProps) => {
             </img>
         </div>
         <div className="textInfo">
-            <h1>Titulo</h1>
-            <p>Lorem blabla lorem bla lorem blabla lorem bla bla lorem blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem bla</p>
+            <h1>{props.title}</h1>
+            <p>{props.content}</p>
         </div>
     </div>;
 };
