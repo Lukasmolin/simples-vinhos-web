@@ -1,9 +1,10 @@
 /* Component */
 .header-comp {
+    width: 100%;
+    flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
     background-color: black;
-    position: sticky;
     padding: 0px;
 }
 
@@ -33,9 +34,9 @@
 }
 
 .header-comp .navWrapper nav a {
-    font-weight: 400;
-    color: white;
     text-decoration: none;
+    font-weight: 400;
+    color: white;    
     white-space: nowrap;
     height: fit-content;
     padding: 4px;
@@ -55,4 +56,14 @@
 
 .header-comp .navWrapper nav a + a {
     margin-left: 4px;
+}
+
+@media (max-width: 600px) {
+    .header-comp {
+        flex-direction: column;
+    }
+
+    .header-comp > * {
+        justify-content: center;
+    }
 }

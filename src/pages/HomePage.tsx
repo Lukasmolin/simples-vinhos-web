@@ -8,7 +8,7 @@ const homePageService = new HomePageService();
 
 const HomePage: React.FC = () => {
     return <>
-        <Header menu={service.menu} logoImg={service.logoImg} textContent={ 'Simples Vinhos' } />
+        <Header menu={service.menu} logoImg={service.logoImg} />
         <main>
             {homePageService.welcomeText}
         </main>

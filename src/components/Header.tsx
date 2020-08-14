@@ -8,7 +8,6 @@ export interface HeaderProps {
        to: string 
     }[]
     logoImg: string
-    textContent: string
 }
 
 export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
@@ -26,7 +25,7 @@ export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
             <img 
                 className="logoImg"
                 src={props.logoImg}
-                alt="Simples Logo">
+                alt="Simples Vinhos Logo">
             </img>
         </div>
         <div className="navWrapper">
@@ -34,7 +33,7 @@ export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
                 {menu}
             </nav>
         </div>
-              
+
     </header>;
 };
 

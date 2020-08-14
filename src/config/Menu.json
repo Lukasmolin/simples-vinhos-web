@@ -1,6 +1,6 @@
 {
     "items": [
-        { "to": "home", "label": "Home" },
+        { "to": "/", "label": "Home" },
         { "to": "carta", "label": "Carta" },
         { "to": "vinhos", "label": "Vinhos" },
         { "to": "sobre", "label": "Sobre" }
