@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95f5e174045ee81fd0ae9fe0cfcd0a8e",
+    "revision": "6319b0b28aad1e37508ba33d861d9b44",
     "url": "/simples-vinhos-web/index.html"
   },
   {
-    "revision": "847ebcbd06abdf558576",
-    "url": "/simples-vinhos-web/static/css/main.f1bb5902.chunk.css"
+    "revision": "ad8a1e3f64dfadae9338",
+    "url": "/simples-vinhos-web/static/css/main.be50b438.chunk.css"
   },
   {
     "revision": "a29dc712f777e7ce5de1",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simples-vinhos-web/static/js/2.a51cbedf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "847ebcbd06abdf558576",
-    "url": "/simples-vinhos-web/static/js/main.496be012.chunk.js"
+    "revision": "ad8a1e3f64dfadae9338",
+    "url": "/simples-vinhos-web/static/js/main.b4aa9b0f.chunk.js"
   },
   {
     "revision": "ab4ad8f7ab6ad7906b13",
