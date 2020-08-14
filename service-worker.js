@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/simples-vinhos-web/precache-manifest.4515f9e1c51941db2014a41110951635.js"
+  "/simples-vinhos-web/precache-manifest.024a89f18a635c3e1b6f26568e246885.js"
 );
 
 self.addEventListener('message', (event) => {
