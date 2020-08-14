@@ -1,8 +1,10 @@
+/* Component */
 .header-comp {
+    width: 100%;
+    flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
     background-color: black;
-    position: sticky;
     padding: 0px;
 }
 
@@ -10,24 +12,58 @@
     display: flex;
 }
 
+/* Logo */
 .header-comp .logoImg {    
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 75px;
+    max-width: 75px;
+    min-width: 25px;
+    min-height: 25px;
 }
 
-.header-comp nav {
-    display: flex;
+/* Navegation */
+.header-comp .navWrapper {
+    height: inherit;
     align-items: flex-end;
+    padding: 4px;
 }
 
-.header-comp nav a {
-    font: 300;
-    color: white;
+
+.header-comp .navWrapper nav {
+    display: flex;
+    height: fit-content;
+}
+
+.header-comp .navWrapper nav a {
     text-decoration: none;
+    font-weight: 400;
+    color: white;    
     white-space: nowrap;
     height: fit-content;
     padding: 4px;
-    margin: 0px 4px 4px 0px;
     border:  2px solid white;
     transition: 0.25s;
+}
+
+.header-comp .navWrapper nav a:hover {
+    background-color: #383838;
+    transition: 0s;
+}
+
+.header-comp .navWrapper nav a:active { 
+    background-color: white;
+    color: #383838;
+}
+
+.header-comp .navWrapper nav a + a {
+    margin-left: 4px;
+}
+
+@media (max-width: 600px) {
+    .header-comp {
+        flex-direction: column;
+    }
+
+    .header-comp > * {
+        justify-content: center;
+    }
 }

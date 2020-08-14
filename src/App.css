@@ -1,6 +1,6 @@
 * {
   font-family: 'Montserrat', sans-serif;
-  font: 300;
+  font-weight: 300;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,9 +12,10 @@ body {
   min-width: 300px;
 }
 
+/** Exctract later **/
 main {
   display: flex;
-  padding: 1px;
-  justify-content: space-around;
-  align-content: space-around;
+  padding: 4px;
+  justify-content: center;
+  align-content: center;
 }

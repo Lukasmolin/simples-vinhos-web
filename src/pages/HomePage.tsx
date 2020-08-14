@@ -1,5 +1,5 @@
 import React from 'react';
-import Header, { HeaderProps } from '../components/Header';
+import Header from '../components/Header';
 import Service from '../service/Service';
 import HomePageService from '../service/HomePageService';
 
@@ -8,7 +8,7 @@ const homePageService = new HomePageService();
 
 const HomePage: React.FC = () => {
     return <>
-        <Header menu={service.menu} logoImg={''} textContent={ 'Simples Vinhos' } />
+        <Header menu={service.menu} logoImg={service.logoImg} />
         <main>
             {homePageService.welcomeText}
         </main>

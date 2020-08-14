@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../resources/imgs/SimplesLogo.png';
 import './Header.css';
 
 export interface HeaderProps {
@@ -9,7 +8,6 @@ export interface HeaderProps {
        to: string 
     }[]
     logoImg: string
-    textContent: string
 }
 
 export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
@@ -22,16 +20,20 @@ export const Header : React.FC <HeaderProps> = (props: HeaderProps) => {
     });
 
     return <header className="header-comp">
+        
         <div className="logoWrapper">
             <img 
                 className="logoImg"
-                src={logo}
-                alt="Simples Logo">
+                src={props.logoImg}
+                alt="Simples Vinhos Logo">
             </img>
         </div>
-        <nav>
-            {menu}
-        </nav>
+        <div className="navWrapper">
+            <nav>
+                {menu}
+            </nav>
+        </div>
+
     </header>;
 };
 

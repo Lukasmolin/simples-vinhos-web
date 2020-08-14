@@ -1,6 +1,7 @@
 import infoAuthor from '../config/InfoAuthor.json';
 import infoWine from '../config/InfoWine.json';
 import menuInfo from '../config/Menu.json';
+import logo from '../resources/imgs/SimplesLogo.png';
 
 export interface Wine {
     name: string
@@ -38,6 +39,10 @@ export default class Service {
 
     public get menu() : MenuItem[] {
         return menuInfo.items;
+    }
+
+    public get logoImg() : string {
+        return logo;
     }
 
 }
