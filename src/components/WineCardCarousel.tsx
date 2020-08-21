@@ -13,14 +13,19 @@ export interface WineCardCarouselProps {
 
 const WineCardCarousel : React.FC<WineCardCarouselProps> = (props: WineCardCarouselProps) => {
     const { wineList } = props;
-    const wine = wineList[0];
     
     return <div className="wineCardCarousel-comp">
-        <WineCard
-            imageSrc={wine.imageSrc}
-            title={wine.title}
-            content={wine.content}
-        />
+        {
+        wineList.map( wine => {
+            return <div className="wineCardContainer">
+                <WineCard
+                    imageSrc={wine.imageSrc}
+                    title={wine.title}
+                    content={wine.content}
+                />
+            </div>;
+        })
+        }        
     </div>;
 }
 

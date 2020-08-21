@@ -1,8 +1,8 @@
 .wineCard-comp {
     display: flex;
     flex-direction: row;
-    max-width: 700px;
-    max-height: 350px;
+    max-width: 900px;
+    max-height: 450px;
     width: 80vw;
     height: 40vw;
     padding: 8px;
