@@ -8,6 +8,7 @@ export interface WineCardCarouselProps {
         title: string;
         content: string;
         linkTo: string;
+        price: number;
     }[];
 }
 
@@ -22,6 +23,7 @@ const WineCardCarousel : React.FC<WineCardCarouselProps> = (props: WineCardCarou
                     imageSrc={wine.imageSrc}
                     title={wine.title}
                     content={wine.content}
+                    price={wine.price}
                 />
             </div>;
         })

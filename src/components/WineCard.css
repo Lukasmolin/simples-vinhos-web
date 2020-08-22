@@ -17,7 +17,6 @@
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-content: center;
 }
 
@@ -26,15 +25,29 @@
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    background-color: red;
+    background-color: lightgray;
 }
 
 .wineCard-comp .textInfo {
     width: 50%;
     height: 100%;
-    max-height: 400px;
-    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.wineCard-comp > .textInfo > .innerTextContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
     text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.wineCard-comp .textInfo .textFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 600px) {
