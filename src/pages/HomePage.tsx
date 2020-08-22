@@ -6,8 +6,6 @@ import WineCardCarousel from '../components/WineCardCarousel';
 const service = new Service();
 
 const HomePage: React.FC = () => {
-    const content = "O vinho verdadeiramente santificado d'Ele. O vinho verdadeiramente santificado d'Ele. O vinho verdadeiramente santificado d'Ele.O vinho verdadeiramente santificado d'Ele. O vinho verdadeiramente santificado d'Ele.O vinho verdadeiramente santificado d'Ele. O vinho verdadeiramente santificado d'Ele.O vinho verdadeiramente santificado d'Ele. O vinho verdadeiramente santificado d'Ele.";
-    const title="Vinho Santo Gole";
     const wine = service.wines;
     const wineList = wine.map(w => {
         return {
