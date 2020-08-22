@@ -1,20 +1,26 @@
 import React from 'react';
 import Header from '../components/Header';
 import Service from '../service/Service';
-import HomePageService from '../service/HomePageService';
-import WineCard from '../components/WineCard';
+import WineCardCarousel from '../components/WineCardCarousel';
 
 const service = new Service();
-const homePageService = new HomePageService();
 
 const HomePage: React.FC = () => {
+    const wine = service.wines;
+    const wineList = wine.map(w => {
+        return {
+            content: w.description,
+            title: w.name,
+            price: w.price,
+            imageSrc: w.imgUrl
+        };
+    });
+
     return <>
         <Header menu={service.menu} logoImg={service.logoImg} />
         <main>
-            <WineCard 
-                imageSrc={service.logoImg}
-                title="Vinho Santo Gole"
-                content="O vinho verdadeiramente santificado d'Ele"    
+            <WineCardCarousel
+                wineList={wineList}
             />
         </main>
     </>;

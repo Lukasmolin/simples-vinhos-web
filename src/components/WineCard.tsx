@@ -1,13 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import './WineCard.css';
 
 export interface WineCardProps {
     imageSrc: string
     title: string
     content: string
+    price: number
 }
 
-const WineCard: React.FC<WineCardProps> = (props: WineCardProps) => {   
+const WineCard: React.FC<WineCardProps> = (props: WineCardProps) => {
+    
 
     return <div className="wineCard-comp" >
         <div className="imgHolder">
@@ -18,8 +20,18 @@ const WineCard: React.FC<WineCardProps> = (props: WineCardProps) => {
             </img>
         </div>
         <div className="textInfo">
-            <h1>{props.title}</h1>
-            <p>{props.content}</p>
+            <div className="innerTextContainer">
+                <div className="textTitle">
+                    <h1>{props.title}</h1>
+                </div>
+                <div className="textContent">
+                    {props.content}
+                </div>
+            </div>
+            <div className="textFooter">
+                <span className="priceLabel">Preço:</span>
+                <span className="priceValue">R$ {props.price}</span>
+            </div>
         </div>
     </div>;
 };

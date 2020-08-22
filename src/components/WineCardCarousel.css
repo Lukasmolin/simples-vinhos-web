@@ -1,0 +1,9 @@
+.wineCardCarousel-comp .wineCardContainer {
+    padding: 8px;
+}
+
+@media (max-width: 600px) {
+    .wineCardCarousel-comp .wineCardContainer {
+        padding: 4px;
+    }
+}

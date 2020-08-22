@@ -3,14 +3,28 @@
         "name": "Charbonay Cpt. Holt",
         "type": "Tinto",
         "description": "um vinho muito bom pra tomar pelo sabor de vinho e notas de vinho",
-        "imgUrl": "http://estaaimg.com/vinho.jpeg",
+        "imgUrl": "vinho.jpg",
         "price": 9.99
     },
     {
         "name": "Keep Cooler Uva",
-        "type": "Keep Cooler",
+        "type": "Suquim",
         "description": "Suquinho de uva gostoso",
-        "imgUrl": "http://estaaimg.com/suquim.jpeg",
+        "imgUrl": "vinho.jpg",
         "price": 16.99
+    },
+    {
+        "name": "Neve",
+        "type": "Branco",
+        "description": "um vinho muito bom pra tomar pelo sabor de vinho e notas de vinho",
+        "imgUrl": "vinho.jpg",
+        "price": 24.99
+    },
+    {
+        "name": "Saara",
+        "type": "Pro Seco",
+        "description": "um vinho muito bom pra tomar pelo sabor de vinho e notas de vinho",
+        "imgUrl": "vinho.jpg",
+        "price": 33.99
     }
 ]
