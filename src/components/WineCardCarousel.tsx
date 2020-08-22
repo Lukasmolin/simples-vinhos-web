@@ -7,7 +7,6 @@ export interface WineCardCarouselProps {
         imageSrc: string;
         title: string;
         content: string;
-        linkTo: string;
         price: number;
     }[];
 }

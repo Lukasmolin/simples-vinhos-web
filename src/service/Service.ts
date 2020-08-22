@@ -30,7 +30,9 @@ export interface MenuItem {
 export default class Service {
 
     public get wines() : Wine[] {
-        return infoWine;
+        return infoWine.map(wine => { 
+            return { ...wine, imgUrl: process.env.PUBLIC_URL+"/images/"+wine.imgUrl };
+        });
     }
 
     public get author() : Author {
