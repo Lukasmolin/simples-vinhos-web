@@ -1,0 +1,53 @@
+.priceList-comp {
+    border: 4px solid black;
+    padding: 8px;
+    display: flex;
+    flex-flow: column;
+    width: 80vw;
+    align-content: center;
+    justify-content: center;
+}
+
+.priceList-comp .priceListSectionTitle {
+    display: flex;
+}
+
+.priceList-comp .priceListSectionTitle .headerDivider{
+    background-color: black;
+    width: 24px;
+    height: 0.3em;
+}
+
+.priceList-comp .priceListSectionContainer + .priceListSectionContainer {
+    padding-top: 8px;
+}
+
+.priceList-comp .priceListSectionContainer .priceListItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 2px 2px 2px;
+}
+
+.priceList-comp .priceListItemsContainer .priceListItem:nth-child(2n+1) {
+    background-color: #dddddd;
+}
+
+.priceList-comp .priceListItemsContainer .priceListItem .itemName {
+    padding-left: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.priceList-comp .priceListItemsContainer .priceListItem .itemPrice {
+    min-width: 76px;
+}
+
+@media(max-width: 600px) {
+    .priceList-comp {
+        width: 92vw;
+    }
+}
+
+
+
+
