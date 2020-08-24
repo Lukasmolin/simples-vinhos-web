@@ -1,27 +1,31 @@
 import React from 'react';
 import Header from '../components/Header';
 import Service from '../service/Service';
-import WineCardCarousel from '../components/WineCardCarousel';
-
+import PriceList from '../components/PriceList';
 const service = new Service();
 
 const HomePage: React.FC = () => {
     const wine = service.wines;
-    const wineList = wine.map(w => {
-        return {
-            content: w.description,
-            title: w.name,
-            price: w.price,
-            imageSrc: w.imgUrl
-        };
-    });
+    const prices = [{
+        title: 'Vinho Tinto',
+        items: [{
+            name: 'tinto1',
+            price: 33.33
+        },
+        {
+            name: 'tinto2',
+            price: 45.33
+        },
+        {
+            name: 'tinto3',
+            price: 23.33
+        }]
+    }];
 
     return <>
         <Header menu={service.menu} logoImg={service.logoImg} />
         <main>
-            <WineCardCarousel
-                wineList={wineList}
-            />
+            <PriceList items={prices}/>
         </main>
     </>;
 }
