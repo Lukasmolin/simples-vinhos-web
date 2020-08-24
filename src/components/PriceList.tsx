@@ -15,12 +15,14 @@ export const PriceListSection: React.FC<PriceListSectionProps> = (props) => {
         <div className="priceListSectionTitle">
             <h1>{props.title}</h1>
         </div>
+        <div className="priceListItemsContainer">
         {props.items.map(item => {
             return <div className="priceListItem">
                 <span>{item.name}</span>
                 <span>R$ {item.price}</span>
             </div>;
-        })}        
+        })}
+        </div>                
     </div>;
 }
 

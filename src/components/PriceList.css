@@ -1,0 +1,27 @@
+.priceList-comp {
+    border: 4px solid black;
+    padding: 8px;
+    display: flex;
+    flex-flow: column;    
+    width: 80vw;
+    align-content: center;
+    justify-content: center;
+}
+
+.priceList-comp .priceListSectionContainer + .priceListSectionContainer {
+    padding-top: 8px;
+}
+
+.priceList-comp .priceListItemsContainer .priceListItem:nth-child(2n+1) {
+    background-color: #dddddd;
+}
+
+.priceList-comp .priceListSectionContainer .priceListItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 2px 2px 2px;
+}
+
+
+
+

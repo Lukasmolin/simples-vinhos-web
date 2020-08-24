@@ -20,6 +20,21 @@ const HomePage: React.FC = () => {
             name: 'tinto3',
             price: 23.33
         }]
+    },
+    {
+        title: 'Vinho Branco',
+        items: [{
+            name: 'Branco1',
+            price: 33.33
+        },
+        {
+            name: 'Branco2',
+            price: 45.33
+        },
+        {
+            name: 'Branco3',
+            price: 23.33
+        }]
     }];
 
     return <>
