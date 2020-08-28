@@ -16,13 +16,13 @@ const WineCardCarousel : React.FC<WineCardCarouselProps> = (props: WineCardCarou
     
     return <div className="wineCardCarousel-comp">
         {
-        wineList.map( wine => {
-            return <div className="wineCardContainer">
+        wineList.map(wine => {
+            return <div className="wineCardContainer" key={wine.title+wine.price}>
                 <WineCard
                     imageSrc={wine.imageSrc}
                     title={wine.title}
                     content={wine.content}
-                    price={wine.price}
+                    price={wine.price}                    
                 />
             </div>;
         })
