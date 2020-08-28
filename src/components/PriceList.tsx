@@ -1,7 +1,6 @@
 import React from 'react';
 import './PriceList.css';
 
-
 export interface PriceListSectionProps {
     title: string;
     items: {
@@ -34,7 +33,7 @@ export interface PriceListProps {
     items: PriceListSectionProps[];
 }
 
-const PriceList: React.FC<PriceListProps> = (props) => {
+const PriceList: React.FC<PriceListProps> = (props: PriceListProps) => {
     return <div className="priceList-comp">
         <div className="priceListContainer">
             {props.items.map(section => {
