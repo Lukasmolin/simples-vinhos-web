@@ -9,7 +9,18 @@ export interface WineCardProps {
 }
 
 const WineCard: React.FC<WineCardProps> = (props: WineCardProps) => {
+    const textTitle = <div className="textTitle">
+        <h1>{props.title}</h1>
+    </div>;
+
+    const textContent = <div className="textContent">
+        {props.content}
+    </div>;
     
+    const footer = props.price <= 0 ? '' : <div className="textFooter">
+        <span className="priceLabel">Preço:</span>
+        <span className="priceValue">R$ {props.price}</span>
+    </div>;
 
     return <div className="wineCard-comp" >
         <div className="imgHolder">
@@ -21,17 +32,10 @@ const WineCard: React.FC<WineCardProps> = (props: WineCardProps) => {
         </div>
         <div className="textInfo">
             <div className="innerTextContainer">
-                <div className="textTitle">
-                    <h1>{props.title}</h1>
-                </div>
-                <div className="textContent">
-                    {props.content}
-                </div>
+                { textTitle }
+                { textContent }                
             </div>
-            <div className="textFooter">
-                <span className="priceLabel">Preço:</span>
-                <span className="priceValue">R$ {props.price}</span>
-            </div>
+            { footer }
         </div>
     </div>;
 };
