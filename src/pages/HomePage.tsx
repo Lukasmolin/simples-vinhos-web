@@ -14,31 +14,29 @@ const retryNumber = (numbers: number[]) => {
     }
 }
 
-const HomePage: React.FC = () => {
-    const rnd: number[] = [];
-    for (let i = 0; i < 2; i++) {
-        const r = Math.round(Math.random() * 1000) % service.wines.length;
-        if (rnd.includes(r)) {
-            retryNumber(rnd);
-        } else {
-            rnd.push(r);
-        }
+const rnd: number[] = [];
+for (let i = 0; i < 2; i++) {
+    const r = Math.round(Math.random() * 1000) % service.wines.length;
+    if (rnd.includes(r)) {
+        retryNumber(rnd);
+    } else {
+        rnd.push(r);
     }
+}
+const wines = service.wines.filter((wine, index, wines) => {
+    return Boolean(rnd.includes(index));
+});
 
-    console.log(rnd);
-    const wines = service.wines.filter((wine, index, wines) => {
-        return Boolean(rnd.includes(index));
-    });
+const wineList = wines.map(wine => {
+    return {
+        imageSrc: wine.imgUrl,
+        title: wine.name,
+        content: wine.description,
+        price: wine.price
+    }
+});
 
-    const wineList = wines.map(wine => {
-        return {
-            imageSrc: wine.imgUrl,
-            title: wine.name,
-            content: wine.description,
-            price: wine.price
-        }
-    });
-
+const HomePage: React.FC = () => {
     return <>
         <Header menu={service.menu} logoImg={service.logoImg} />
         <main>
