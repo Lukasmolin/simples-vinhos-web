@@ -36,7 +36,7 @@ export default class Service {
     }
 
     public get author() : Author {
-        return infoAuthor;
+        return { ...infoAuthor, imgUrl: process.env.PUBLIC_URL+"/images/"+infoAuthor.imgUrl };
     }
 
     public get menu() : MenuItem[] {
