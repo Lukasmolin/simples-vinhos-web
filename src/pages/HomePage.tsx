@@ -16,7 +16,6 @@ const retryNumber = (numbers: number[]) => {
 
 const HomePage: React.FC = () => {
     const rnd: number[] = [];
-    const maxItems = service.wines.length;
     for (let i = 0; i < 2; i++) {
         const r = Math.round(Math.random() * 1000) % service.wines.length;
         if (rnd.includes(r)) {
