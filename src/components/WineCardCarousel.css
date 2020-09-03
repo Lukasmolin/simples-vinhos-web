@@ -1,11 +1,11 @@
 .wineCardCarousel-comp .wineCardContainer {
-    padding: 8px;
+    padding-bottom: 8px;
     display: flex;
     justify-content: center;
 }
 
 @media (max-width: 600px) {
     .wineCardCarousel-comp .wineCardContainer {
-        padding: 4px;
+        padding-bottom: 4px;
     }
 }
