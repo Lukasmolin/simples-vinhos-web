@@ -1,7 +1,6 @@
 import React from 'react';
 import './PriceList.css';
 
-
 export interface PriceListSectionProps {
     title: string;
     items: {
@@ -21,7 +20,7 @@ export const PriceListSection: React.FC<PriceListSectionProps> = (props) => {
         </div>
         <div className="priceListItemsContainer">
         {props.items.map(item => {
-            return <div className="priceListItem">
+            return <div className="priceListItem" key={item.name+item.price}>
                 <span className="itemName">{item.name}</span>
                 <span className="itemPrice">R$ {item.price}</span>
             </div>;
@@ -34,11 +33,11 @@ export interface PriceListProps {
     items: PriceListSectionProps[];
 }
 
-const PriceList: React.FC<PriceListProps> = (props) => {
+const PriceList: React.FC<PriceListProps> = (props: PriceListProps) => {
     return <div className="priceList-comp">
         <div className="priceListContainer">
             {props.items.map(section => {
-                return <PriceListSection {...section} />
+                return <PriceListSection key={section.title} {...section} />
             })}
         </div>
     </div>;

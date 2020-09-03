@@ -1,7 +1,6 @@
 import infoAuthor from '../config/InfoAuthor.json';
 import infoWine from '../config/InfoWine.json';
 import menuInfo from '../config/Menu.json';
-import logo from '../resources/imgs/SimplesLogo.png';
 
 export interface Wine {
     name: string
@@ -11,15 +10,17 @@ export interface Wine {
     price: number
 }
 
+export interface ContactInfo {
+    label: string;
+    icon: string;
+    linkTo: string;
+}
+
 export interface Author {
     name: string
     about: string
     imgUrl: string
-    contact: {
-        whatsapp: string
-        instagram?: string
-        facebook?: string
-    }
+    contacts: ContactInfo[];
 }
 
 export interface MenuItem {
@@ -36,7 +37,19 @@ export default class Service {
     }
 
     public get author() : Author {
-        return infoAuthor;
+        const contactList = infoAuthor.contacts;
+        const contacts = contactList.map(contact => {
+            return {
+                ...contact,
+                icon: process.env.PUBLIC_URL+"/icons/"+contact.icon
+            };
+        });
+
+        return { 
+            ...infoAuthor,
+            contacts,
+            imgUrl: process.env.PUBLIC_URL+"/images/"+infoAuthor.imgUrl
+        };
     }
 
     public get menu() : MenuItem[] {
@@ -44,7 +57,7 @@ export default class Service {
     }
 
     public get logoImg() : string {
-        return logo;
+        return process.env.PUBLIC_URL+"/images/SimplesLogo.png";
     }
 
 }

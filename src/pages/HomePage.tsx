@@ -1,47 +1,55 @@
 import React from 'react';
 import Header from '../components/Header';
 import Service from '../service/Service';
-import PriceList from '../components/PriceList';
+import WineCardCarousel from '../components/WineCardCarousel';
+import ContactFooter from '../components/ContactFooter';
 const service = new Service();
 
-const HomePage: React.FC = () => {
-    const wine = service.wines;
-    const prices = [{
-        title: 'Vinho Tinto',
-        items: [{
-            name: 'tinto1',
-            price: 33.33
-        },
-        {
-            name: 'tinto2',
-            price: 45.33
-        },
-        {
-            name: 'tinto3',
-            price: 23.33
-        }]
-    },
-    {
-        title: 'Vinho Branco',
-        items: [{
-            name: 'Branco1',
-            price: 33.33
-        },
-        {
-            name: 'Branco2',
-            price: 45.33
-        },
-        {
-            name: 'Branco3',
-            price: 23.33
-        }]
-    }];
+const retryNumber = (numbers: number[]) => {
+    for (let i = 0; i < 10; i++) {
+        const r = Math.round(Math.random() * 1000) % 4;
+        if (!numbers.includes(r)) {
+            numbers.push(r);
+            return;
+        }
+    }
+}
 
+const rnd: number[] = [];
+for (let i = 0; i < 2; i++) {
+    const r = Math.round(Math.random() * 1000) % service.wines.length;
+    if (rnd.includes(r)) {
+        retryNumber(rnd);
+    } else {
+        rnd.push(r);
+    }
+}
+const wines = service.wines.filter((wine, index, wines) => {
+    return Boolean(rnd.includes(index));
+});
+
+const wineList = wines.map(wine => {
+    return {
+        imageSrc: wine.imgUrl,
+        title: wine.name,
+        content: wine.description,
+        price: wine.price
+    }
+});
+
+const HomePage: React.FC = () => {
     return <>
         <Header menu={service.menu} logoImg={service.logoImg} />
         <main>
-            <PriceList items={prices}/>
+            <div className="pageWrapper">
+                <WineCardCarousel wineList={wineList} />
+            </div>            
         </main>
+        <footer>
+            <ContactFooter 
+                contacts={service.author.contacts}
+            />
+        </footer>        
     </>;
 }
 

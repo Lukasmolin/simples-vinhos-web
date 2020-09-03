@@ -1,0 +1,44 @@
+.contactFooter-comp {
+    background-color: #ffffff;
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;  
+    border-top-width: 2px;
+    border-top-color: black;
+    border-top-style: solid;
+}
+
+.contactFooter-comp .contactFooterContainer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contactFooter-comp .contactFooterContainer .contactImgContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2px;
+}
+
+.contactFooter-comp .contactFooterContainer .contactImgContainer:hover {
+    cursor: pointer;
+}
+
+.contactFooter-comp .contactFooterContainer .contactImgContainer img {
+    height: 30px;
+    width: 30px;
+}
+
+@media(max-width: 600px) {
+    .contactFooter-comp {
+        width: fit-content;
+        border-left: 2px;
+        border-left-color: black;
+        border-left-style: solid;
+    }
+    .contactFooter-comp .contactFooterContainer .contactImgContainer img {
+        height: 48px;
+        width: 48px;
+    }
+}
