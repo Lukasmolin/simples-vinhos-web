@@ -22,8 +22,19 @@
 }
 
 .contactFooter-comp .contactFooterContainer .contactImgContainer img {
-    height: 25px;
-    width: 25px;
-    max-width: 25px;
-    max-height: 25px;
+    height: 30px;
+    width: 30px;
+}
+
+@media(max-width: 600px) {
+    .contactFooter-comp {
+        width: fit-content;
+        border-left: 2px;
+        border-left-color: black;
+        border-left-style: solid;
+    }
+    .contactFooter-comp .contactFooterContainer .contactImgContainer img {
+        height: 48px;
+        width: 48px;
+    }
 }
