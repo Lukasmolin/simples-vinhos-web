@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/simples-vinhos-web/static/css/main.0dab6f56.chunk.css",
-    "main.js": "/simples-vinhos-web/static/js/main.64a8582f.chunk.js",
-    "main.js.map": "/simples-vinhos-web/static/js/main.64a8582f.chunk.js.map",
+    "main.css": "/simples-vinhos-web/static/css/main.17940d7a.chunk.css",
+    "main.js": "/simples-vinhos-web/static/js/main.b82455a8.chunk.js",
+    "main.js.map": "/simples-vinhos-web/static/js/main.b82455a8.chunk.js.map",
     "runtime-main.js": "/simples-vinhos-web/static/js/runtime-main.b5c0c8ce.js",
     "runtime-main.js.map": "/simples-vinhos-web/static/js/runtime-main.b5c0c8ce.js.map",
-    "static/js/2.0c09ba31.chunk.js": "/simples-vinhos-web/static/js/2.0c09ba31.chunk.js",
-    "static/js/2.0c09ba31.chunk.js.map": "/simples-vinhos-web/static/js/2.0c09ba31.chunk.js.map",
+    "static/js/2.e87993f5.chunk.js": "/simples-vinhos-web/static/js/2.e87993f5.chunk.js",
+    "static/js/2.e87993f5.chunk.js.map": "/simples-vinhos-web/static/js/2.e87993f5.chunk.js.map",
     "index.html": "/simples-vinhos-web/index.html",
-    "precache-manifest.5e18af94247e58b1453b8b569a3157ef.js": "/simples-vinhos-web/precache-manifest.5e18af94247e58b1453b8b569a3157ef.js",
+    "precache-manifest.483349ad442236df1cf78c22f5595982.js": "/simples-vinhos-web/precache-manifest.483349ad442236df1cf78c22f5595982.js",
     "service-worker.js": "/simples-vinhos-web/service-worker.js",
-    "static/css/main.0dab6f56.chunk.css.map": "/simples-vinhos-web/static/css/main.0dab6f56.chunk.css.map",
-    "static/js/2.0c09ba31.chunk.js.LICENSE.txt": "/simples-vinhos-web/static/js/2.0c09ba31.chunk.js.LICENSE.txt",
-    "static/media/SimplesLogo.png": "/simples-vinhos-web/static/media/SimplesLogo.b26d6fcd.png"
+    "static/css/main.17940d7a.chunk.css.map": "/simples-vinhos-web/static/css/main.17940d7a.chunk.css.map",
+    "static/js/2.e87993f5.chunk.js.LICENSE.txt": "/simples-vinhos-web/static/js/2.e87993f5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b5c0c8ce.js",
-    "static/js/2.0c09ba31.chunk.js",
-    "static/css/main.0dab6f56.chunk.css",
-    "static/js/main.64a8582f.chunk.js"
+    "static/js/2.e87993f5.chunk.js",
+    "static/css/main.17940d7a.chunk.css",
+    "static/js/main.b82455a8.chunk.js"
   ]
 }
