@@ -10,7 +10,7 @@ export interface AboutCardProps {
 const AboutCard: React.FC<AboutCardProps> = (props: AboutCardProps) => {
     return <div className="aboutCard-comp">
         <div className="aboutCardContainer">
-            <div className="imageHolder">
+            <div className="imgHolder">
                 <img 
                     src={props.imageSrc}
                     alt="Foto Vinho"
