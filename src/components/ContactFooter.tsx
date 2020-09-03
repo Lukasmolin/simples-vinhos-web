@@ -5,16 +5,16 @@ import { ContactInfo } from '../service/Service';
 
 export interface ContactFooterProps {
     contacts: ContactInfo[];
+    fixed?: boolean;
 }
 
 const ContactFooter: React.FC<ContactFooterProps> = (props: ContactFooterProps) => {
-    console.log(props.contacts);
     const content = props.contacts.map(contactInfo => {
         return <div 
             className="contactImgContainer"
             key={contactInfo.label+contactInfo.icon}
             onClick={() => {
-                window.open(contactInfo.linkTo);
+                window.open(contactInfo.linkTo, "_blank");
             }}>
             <img                
                 src={contactInfo.icon}
@@ -23,7 +23,7 @@ const ContactFooter: React.FC<ContactFooterProps> = (props: ContactFooterProps) 
         </div>;
     });
     
-    return <div className="contactFooter-comp">
+    return <div className={"contactFooter-comp fixedPosition"}>
         <div className="contactFooterContainer">
             { content }
         </div>
