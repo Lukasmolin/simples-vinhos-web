@@ -28,7 +28,7 @@ main {
   align-content: center;
 }
 
-main > .pageWrapper{
+main > .pageWrapper {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -38,11 +38,13 @@ footer {
   width: 100%;
   bottom: 0px;
   right: 0px;
-  position: fixed;  
+  position: sticky;  
 }
 
 @media(max-width: 600px) {
   footer {
+    position: sticky;
     width: fit-content;
+    align-self: flex-end;
   }
 }

@@ -21,6 +21,10 @@
     padding: 2px;
 }
 
+.contactFooter-comp .contactFooterContainer .contactImgContainer:hover {
+    cursor: pointer;
+}
+
 .contactFooter-comp .contactFooterContainer .contactImgContainer img {
     height: 30px;
     width: 30px;
