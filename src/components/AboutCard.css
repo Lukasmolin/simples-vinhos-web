@@ -34,6 +34,8 @@
     height: 100%;
     display: flex;
     flex-flow: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
     align-content: center;
 }
 
