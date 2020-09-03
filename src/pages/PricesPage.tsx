@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import PriceList, { PriceListSectionProps } from '../components/PriceList';
 import Service, { Wine } from '../service/Service';
+import ContactFooter from '../components/ContactFooter';
 const service = new Service();
 
 const convertWines = (wines: Wine[]): PriceListSectionProps[] => {
@@ -30,8 +31,15 @@ const PricesPage: React.FC = () => {
     return <>
         <Header menu={service.menu} logoImg={service.logoImg} />
         <main>
-            <PriceList items={wineList} />
+            <div className="pageWrapper">
+                <PriceList items={wineList} />
+            </div>
         </main>
+        <footer>
+            <ContactFooter 
+                contacts={service.author.contacts}
+            />
+        </footer>
     </>;
 }
 

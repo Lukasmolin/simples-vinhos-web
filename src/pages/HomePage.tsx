@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Service from '../service/Service';
 import WineCardCarousel from '../components/WineCardCarousel';
+import ContactFooter from '../components/ContactFooter';
 const service = new Service();
 
 const retryNumber = (numbers: number[]) => {
@@ -40,8 +41,15 @@ const HomePage: React.FC = () => {
     return <>
         <Header menu={service.menu} logoImg={service.logoImg} />
         <main>
-            <WineCardCarousel wineList={wineList} />
+            <div className="pageWrapper">
+                <WineCardCarousel wineList={wineList} />
+            </div>            
         </main>
+        <footer>
+            <ContactFooter 
+                contacts={service.author.contacts}
+            />
+        </footer>        
     </>;
 }
 
