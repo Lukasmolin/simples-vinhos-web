@@ -2,9 +2,21 @@
     "name": "Sérgio Carvalho",
     "imgUrl": "vinho.jpg",
     "about": "Um cara bem legal que curte vinhos musica e tocar baixo.",
-    "contact": {
-        "whatsapp": "+55 21 99999-9999",
-        "instagram": "@simplesvinhos",
-        "facebook": "/simplesvinhos"
-    }
+    "contact": [
+        { 
+            "label": "whatsapp",
+            "icon": "",
+            "linkTo": ""
+        },
+        { 
+            "label": "Instagram",
+            "icon": "",
+            "linkTo": "http://www.instagram.com/simplesvinhos" 
+        },
+        { 
+            "label": "facebook",
+            "icon": "",
+            "linkTo": "" 
+        }
+    ]
 }

@@ -10,15 +10,17 @@ export interface Wine {
     price: number
 }
 
+export interface ContactInfo {
+    label: string;
+    icon: string;
+    linkTo: string;
+}
+
 export interface Author {
     name: string
     about: string
     imgUrl: string
-    contact: {
-        whatsapp: string
-        instagram?: string
-        facebook?: string
-    }
+    contact: ContactInfo[];
 }
 
 export interface MenuItem {
