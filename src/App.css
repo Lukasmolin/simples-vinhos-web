@@ -16,6 +16,7 @@ body {
 main {
   display: flex;
   padding: 4px;
+  flex-flow: column;
   justify-content: center;
   align-content: center;
 }
