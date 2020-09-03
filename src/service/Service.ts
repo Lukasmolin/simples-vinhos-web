@@ -20,7 +20,7 @@ export interface Author {
     name: string
     about: string
     imgUrl: string
-    contact: ContactInfo[];
+    contacts: ContactInfo[];
 }
 
 export interface MenuItem {
@@ -37,7 +37,19 @@ export default class Service {
     }
 
     public get author() : Author {
-        return { ...infoAuthor, imgUrl: process.env.PUBLIC_URL+"/images/"+infoAuthor.imgUrl };
+        const contactList = infoAuthor.contacts;
+        const contacts = contactList.map(contact => {
+            return {
+                ...contact,
+                icon: process.env.PUBLIC_URL+"/icons/"+contact.icon
+            };
+        });
+
+        return { 
+            ...infoAuthor,
+            contacts,
+            imgUrl: process.env.PUBLIC_URL+"/images/"+infoAuthor.imgUrl
+        };
     }
 
     public get menu() : MenuItem[] {

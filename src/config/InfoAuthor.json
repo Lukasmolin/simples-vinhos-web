@@ -1,21 +1,21 @@
 {
     "name": "Sérgio Carvalho",
     "imgUrl": "vinho.jpg",
-    "about": "Um cara bem legal que curte vinhos musica e tocar baixo.",
-    "contact": [
+    "about": "Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. Um cara bem legal que curte vinhos musica e tocar baixo. ",
+    "contacts": [
         { 
-            "label": "whatsapp",
-            "icon": "",
+            "label": "Whatsapp",
+            "icon": "whatsapp.svg",
             "linkTo": ""
         },
         { 
             "label": "Instagram",
-            "icon": "",
+            "icon": "instagram.svg",
             "linkTo": "http://www.instagram.com/simplesvinhos" 
         },
         { 
-            "label": "facebook",
-            "icon": "",
+            "label": "Facebook",
+            "icon": "facebook.svg",
             "linkTo": "" 
         }
     ]
