@@ -1,0 +1,18 @@
+.contactFooter-comp {
+    width: 100%;    
+}
+
+.contactFooter-comp .contactFooterContainer {
+    width: 100%;
+    display: flex;
+    justify-items: flex-end;
+}
+
+.contactFooter-comp .contactFooterContainer .contactImgContainer {
+    padding: 2px;
+}
+
+.contactFooter-comp .contactFooterContainer .contactImgContainer img {
+    height: 25px;
+    width: 25px;
+}

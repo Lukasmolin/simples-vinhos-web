@@ -6,17 +6,17 @@
         { 
             "label": "Whatsapp",
             "icon": "whatsapp.svg",
-            "linkTo": ""
+            "linkTo": "https://wa.me/5521994961817"
         },
         { 
             "label": "Instagram",
             "icon": "instagram.svg",
-            "linkTo": "http://www.instagram.com/simplesvinhos" 
+            "linkTo": "https://www.instagram.com/simplesvinhos" 
         },
         { 
             "label": "Facebook",
             "icon": "facebook.svg",
-            "linkTo": "" 
+            "linkTo": "https://www.facebook.com/simplesvinhos" 
         }
     ]
 }
