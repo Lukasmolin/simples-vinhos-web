@@ -1,4 +1,5 @@
 {
+    "rootUrl": "/simples-vinhos-web",
     "items": [
         { "to": "home", "label": "Home" },
         { "to": "carta", "label": "Carta" },

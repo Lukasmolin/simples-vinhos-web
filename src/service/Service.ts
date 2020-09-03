@@ -30,6 +30,10 @@ export interface MenuItem {
 
 export default class Service {
 
+    public get rootUrl() : string {
+        return menuInfo.rootUrl;
+    }
+
     public get wines() : Wine[] {
         return infoWine.map(wine => { 
             return { ...wine, imgUrl: process.env.PUBLIC_URL+"/images/"+wine.imgUrl };
@@ -59,5 +63,7 @@ export default class Service {
     public get logoImg() : string {
         return process.env.PUBLIC_URL+"/images/SimplesLogo.png";
     }
+
+    
 
 }
