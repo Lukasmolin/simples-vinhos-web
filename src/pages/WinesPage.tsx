@@ -22,6 +22,7 @@ const WinePage : React.FC = () => {
                 <WineCardCarousel wineList={wineList} />
             </div>
         </main>
+        <div className="pageFiller"></div>
         <footer>
             <ContactFooter 
                 contacts={service.author.contacts}
