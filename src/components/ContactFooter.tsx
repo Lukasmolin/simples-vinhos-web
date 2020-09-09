@@ -23,7 +23,7 @@ const ContactFooter: React.FC<ContactFooterProps> = (props: ContactFooterProps) 
         </div>;
     });
     
-    return <div className={"contactFooter-comp fixedPosition"}>
+    return <div className={"contactFooter-comp"}>
         <div className="contactFooterContainer">
             { content }
         </div>

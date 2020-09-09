@@ -38,12 +38,11 @@ footer {
   width: 100%;
   bottom: 0px;
   right: 0px;
-  position: sticky;  
+  position: fixed;
 }
 
 @media(max-width: 600px) {
   footer {
-    position: sticky;
     width: fit-content;
     align-self: flex-end;
   }
