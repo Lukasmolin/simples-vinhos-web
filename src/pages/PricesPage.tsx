@@ -35,6 +35,7 @@ const PricesPage: React.FC = () => {
                 <PriceList items={wineList} />
             </div>
         </main>
+        <div className="pageFiller"></div>
         <footer>
             <ContactFooter 
                 contacts={service.author.contacts}

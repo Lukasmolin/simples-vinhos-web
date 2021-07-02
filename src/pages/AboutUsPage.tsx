@@ -18,6 +18,7 @@ const AboutUsPage : React.FC = () => {
                 />
             </div>
         </main>
+        <div className="pageFiller"></div>
         <footer>
             <ContactFooter 
                 contacts={service.author.contacts}
