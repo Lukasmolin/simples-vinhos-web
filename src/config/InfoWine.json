@@ -56,7 +56,7 @@
         "price": 23.99
     },
     {
-        "name": "Vinho Merda",
+        "name": "Vinho Ruim",
         "type": "Pro Seco",
         "description": "um vinho muito bom pra tomar pelo sabor de vinho e notas de vinho",
         "imgUrl": "vinho.jpg",
@@ -68,13 +68,6 @@
         "description": "Suquim",
         "imgUrl": "vinho4.png",
         "price": 33.99
-    },
-    {
-        "name": "Tinta Roxa",
-        "type": "Tinto",
-        "description": "uParece tinta essa porra",
-        "imgUrl": "vinho4.png",
-        "price": 1.29
     },
     {
         "name": "Suco Integral Uva",
